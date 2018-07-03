@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "firebase": "^4.6.0",
@@ -18,7 +20,8 @@
     "react-native-open-settings": "^1.0.1",
     "react-native-permissions": "^1.0.1",
     "react-navigation": "^1.0.0-beta.15",
-    "tcomb-form-native": "^0.6.11"
+    "tcomb-form-native": "^0.6.11",
+    "snyk": "^1.88.0"
   },
   "devDependencies": {
     "babel-jest": "21.2.0",
@@ -28,5 +31,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "snyk": true
 }
